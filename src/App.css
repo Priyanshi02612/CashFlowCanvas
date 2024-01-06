@@ -1,0 +1,360 @@
+body{
+  background-image: url(Background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header{
+  display:flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+
+.logoimage,.amount{
+  flex: 1;
+}
+
+.logoimage{
+  flex: 10%;
+  
+}
+
+.logo {
+  width: 150px; 
+  /* height: auto;  */
+  margin: -12px -10px 0px 18px;
+  text-align: center;
+}
+
+.logotext{
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.amount {
+  border-style: hidden;
+  border-radius: 3px;
+  background-color: #6b6e6d;
+  margin: 30px 10px 0px 0px;
+  padding: 5px;
+  flex: 90%;
+  width: 200px;
+  height: 40px;
+ 
+}
+
+.amount1 {
+  color:floralwhite;
+  font-size: 20px;
+}
+
+.dateSelector {
+  width: 550px;
+  text-align:center;
+  cursor: default;
+  font-size: 18px;
+}
+
+.calendarContainer {
+  width: 500px;
+  margin: 3px 17px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex:20%;
+}
+
+.calendar,
+.form {
+  margin-top: 3px;
+}
+
+.table{
+  flex: 50%;
+}
+
+table{
+  font-size: 15px;
+}
+
+.table2{
+  text-align: center;
+  padding: 10px;
+  width: 800px;
+  margin: 10px 10px 10px 10px;
+  cursor:default;
+}
+
+.table1{
+  margin: 30px 50px 10px 50px;
+  padding: 10px;
+  width: 850px;
+}
+
+.pointer1:hover{
+  color:#1087ff;
+}
+
+.form{
+  margin-left: 17px;
+  background-image: url(Background.jpg);
+  background-size: cover;
+}
+
+.form1 {
+  border: 1px solid #595e5c;
+  width: 550px;
+  padding: 15px;
+}
+
+.btn2{
+  text-align: center;
+  background-color: #6b6e6d;
+  border-radius: 5px;
+  border-style: hidden;
+  color: white;
+  width: 515px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.btn2:hover{
+  background-color: #a4aca9;
+}
+
+.Container1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.container,
+.table {
+  flex-direction: column;
+}
+
+@media (max-width: 800px){
+  .Container1{
+    flex-direction: column;
+  }
+}
+
+.date:hover{
+  cursor: pointer;
+}
+
+.searchBar{
+  width: 600px;
+}
+
+.search{
+  width: 500px;
+  margin: 5px 0px 5px 110px;
+}
+
+#search{
+  background-color: #6b6e6d;
+  border-radius: 5px;
+  border-style: hidden;
+  color: white;
+  height: 42px;
+}
+
+.format {
+  width: 200px;
+  height: 35px;
+  border-color: #dee2e6;
+  margin: 10px 10px 10px 450px;
+  text-align: center;
+}
+#button1 {
+  text-align: center;
+  background-color: #6b6e6d;
+  border-radius: 5px;
+  border-style: hidden;
+  color: white;
+  width: 120px;
+  height: 40px;
+  margin-left: 490px;
+}
+
+#button1:hover {
+  background-color: #a4aca9;
+}
+  
+.btn1{
+  text-align: center;
+  background-color: #6b6e6d;
+  border-radius: 5px;
+  border-style: hidden;
+  color: white;
+  width: 120px;
+  height: 30px;
+  margin-left: 490px;
+}
+
+@media print {
+  table th:nth-child(1), 
+  table td:nth-child(1),
+  table th:nth-child(7), 
+  table td:nth-child(7) { 
+    display: none;
+  }
+}
+
+.pointer1:hover{
+  background-color: #a4aca9;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.react-calendar {
+  width: 550px;
+  background-image: url(Background.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 1px solid #595e5c;
+  line-height: 1.125em;
+}
+
+.react-calendar--doubleView {
+  width: 700px;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 1em;
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__tile--now {
+  background: #ffff76;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #ffffa9;
+}
+
+.react-calendar__tile--hasActive {
+  background: #76baff;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #a9d4ff;
+}
+
+.react-calendar__tile--active {
+  background: #006edc;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #1087ff;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
